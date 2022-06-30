@@ -1,6 +1,4 @@
 :root{
-    box-sizing: border-box;
-    margin: 0px;
     --black:black;
     --green:#82d992;
     --purple:#8334eb;
@@ -8,6 +6,9 @@
 
 *{
     transition:all 2s;
+    box-sizing: border-box;
+    
+    font-family:'Courier New', Courier, monospace;
 }
 
 body{
@@ -70,6 +71,15 @@ nav{
     font-weight:bold;
     text-decoration: none;
     text-emphasis: none;
+}
+
+footer {
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    height: 10vh;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .dark_mode {
