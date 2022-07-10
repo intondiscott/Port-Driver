@@ -6,12 +6,12 @@ const fs = require('fs');
 
 const app = express();
 
-axios('https://www.zillow.com/homedetails/74-Hill-St-Ansonia-CT-06401/57882408_zpid/')
+axios('https://www.panynj.gov/bridges-tunnels/en/george-washington-bridge.html')
 .then(res => {
     const html = res.data;
     const $ = cheerio.load(html);
     const list = []
-    $(`.Text-c11n-8-65-2__sc-aiai24-0`, html).each(function() {
+    $(`<span class="text-3xl font-bold mr-2">8</span>`, html).each(function() {
         const title = $(this).text();
         console.log(title)
         list.push(title)
