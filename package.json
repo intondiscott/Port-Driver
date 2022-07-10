@@ -1,0 +1,24 @@
+{
+  "name": "port-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrap.js",
+  "scripts": {
+    "start": "nodemon scrap.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intondiscott/Port-Driver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/intondiscott/Port-Driver/issues"
+  },
+  "homepage": "https://github.com/intondiscott/Port-Driver#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.1"
+  }
+}

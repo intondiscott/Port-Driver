@@ -1,128 +1,166 @@
-:root{
-    --black:black;
-    --green:#82d992;
-    --purple:#8334eb;
-}
-
-*{
-    transition:all 2s;
-    box-sizing: border-box;
-    
+body {
+    transition: 1s;
     font-family:'Courier New', Courier, monospace;
 }
 
-body{
-    background-color:#4e4e4f;
-    margin-left: 20px;
+header {
+    display:flex;
+    justify-content:flex-end;
 }
 
-#header{
+#main-section {
+    padding: 100px 0;
+    height:20vh;
     text-align: center;
-    background-color: #eba429;
-    color: aliceblue;
-    height:10vh;
-    padding-top:3rem;
-    width:95vw;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    animation:neon 1s ease-in-out alternate infinite;
 }
 
-nav{
-    
+#ports {
     display: flex;
-    justify-content: end;
-    
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+#maher {
+    text-align: center;
     
 }
 
-.nav_btn{
-    border-radius: 50%;
-    height: 40px;
-    background-color: #474640;
+h1 {
+    font-weight:900;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    text-emphasis: none;
+    color:white;
+}
+
+button {
+    border-radius: 10px;
+    width:60%;
+    height: 15%;
+    margin: 5px 0;
+    text-align:center;
+    background-color:coral;
     color: white;
     font-weight: bold;
-}
-.nav_btn a{
-    text-decoration: none;
-    text-emphasis: none;
-    color: white;
-}
-
-#grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap:10px;
-    width:95vw;
-    
-}
-.item{
-    background:linear-gradient(rgba(239, 11, 163, 0.5), rgba(238, 10, 246, 0.7));
-    border-radius: 10px;
-    height: 30vh;
-    
-    
+    transition: 1s;
     
 }
 
-.item a {
-    font-size: 20px;
-    color: white;
-    font-weight:bold;
-    text-decoration: none;
-    text-emphasis: none;
+button:hover {
+    background-color:brown;
+    transition: .3s;
+}
+
+.dark-mode button {
+    background-color:blueviolet;
+}
+
+.dark-mode button:hover {
+    background-color:rgb(232, 12, 192);
+    transition: .3s;
 }
 
 footer {
-    background-color: black;
-    font-size: 20px;
-    color: white;
-    height: 10vh;
-    border-radius: 20px;
     text-align: center;
 }
 
-.dark_mode {
-    background-color:black;
+.terminals {
+    height: 300px;
+    background-color:rgb(145, 146, 146);
+    width: 95%;
+    margin: 1%;
+    box-shadow: 4px 4px 10px black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
 }
-.dark_mode #header{
+
+.switch {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(1, 1, 1);
+    position: fixed;
+}
+
+.toggle {
+    position:absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    top: 2px;
+    left:2px;
+    background-color:white;
+    box-shadow: inset 4px 4px 10px black;
+    transition: 1s;
+}
+
+.sun {
+    position:absolute;
+    width: 25px;
+    height: 25px;
+    left:2px;
+    top:2px;
+    border-radius: 15px;
+    z-index: -1;
+    transition: 1s;
+    opacity: 0
+}
+
+.dark-mode .sun {
+    opacity: 1;
+}
+
+.moon {
+    position:absolute;
+    width: 23px;
+    height: 23px;
+    left:32px;
+    top:3px;
+    border-radius: 15px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.traffic-info  {
+    height: 70px;
+    width: 95px;
+    background-color:lightcoral;
+}
+
+.dark-mode .moon {
+    opacity: 0;
+}
+
+.dark-mode {
+    background-color: rgb(66, 66, 66);
     color: white;
-    background-color:black;
-    transition:all 2s;
 }
 
-.dark_mode .item {
-    background:plum;
+.dark-mode .toggle {
+    transform: translateX(30px);
+    box-shadow: inset -4px -4px 10px black;
 }
 
-.dark_mode .nav_btn {
-    background-color:aliceblue;
-    color:black;
-}
-.dark_mode .nav_btn a {
-    color:black;
+.dark-mode .terminals {
+    background-color:rgb(84, 84, 84);
 }
 
-@keyframes neon{
-    from {
-      box-shadow: 3px 1px 10px plum;
-      
-    }
-    to {
-      box-shadow: 3px 3px 30px plum;
-    }
-  }
+#twitter {
+    overflow-y: auto;
+}
 
-  @media only screen and (max-width: 600px) {
-    #grid{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap:10px;
-        width:95vw;
-        
+@media only screen and (min-width: 970px) {
+    .terminals {
+        height: 600px;
+        width: 48%;
+        margin: 1%;
     }
-    
-    body {
-        margin-left: 7px;
+
+    h1 {
+        font-size: 40px;
     }
-  }
+}

@@ -4,27 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Port Info</title>
+    <title>Port Driver</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-    <nav id="nav">
-        <button class="nav_btn" id="toggle">Night mode</button>
-        <button class="nav_btn"><a href="index.html">Port Info</a></button>
-    </nav>
-    <main>
-        <h1 id="header">Port Info</h1>
-        <div id="grid">
-            <button class="item"><a href="pnct.html">PNCT</a></button>
-            <button class="item"><a href="maher.html">Maher Terminal</a></button>
-            <button class="item"><a href="gct_global.html">Gct Global</a></button>
-            <button class="item"><a href="nyct.html">NYCT</a></button>
-            <button class="item"><a href="apm.html">APM</a></button>
-            <button class="item"><a href="c&c.html">C&C</a></button>
-            <button class="item"><a href="https://www.panynj.gov/bridges-tunnels/en/george-washington-bridge.html" target="#">GWB Travel Times</a></button>
+    <header>
+        <div class="switch">
+            <div class="toggle"></div>
+            <img class="moon" src="./images/moon.png">
+            <img class="sun" src="./images/sun.png">
         </div>
-    </main>
+    </header>
+    <section id="main-section">
+        <h1>Port Driver Information</h1>
+        
+    </section>
+    <section id="ports">
+        <div class="terminals" id="twitter">
+            <a class="twitter-timeline" href="https://twitter.com/PANYNJ_GWB?ref_src=twsrc%5Etfw">Tweets by PANYNJ_GWB</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="terminals" id="twitter">
+            <a class="twitter-timeline" href="https://twitter.com/PortNYNJ?ref_src=twsrc%5Etfw">Tweets by PortNYNJ</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="terminals" id="maher">
+            <h2>Maher Terminal</h2>
+            <button><a href="https://mobile.maherterminals.com/booking-inquiry" target="#">Booking</a></button>
+            <button><a href="https://portal.maherterminals.com/reports/VESSEL_RECEIVING_SCHEDULE_NEW.pdf" target="#">Vessel Schedule</a></button>
+            <button><a href="https://mobile.maherterminals.com/EmptyReturns" target="#">Empty Returns</a></button>
+            <button><a href="https://mobile.maherterminals.com/container-availability" target="#">Container Availability</a></button>
+        </div>
+        <div class="terminals" id="pnct">
+            <h2>PNCT Terminal</h2>
+            <button><a href="https://www.pnct.net/" target="#">Booking/Container/Reprint Ticket</a></button>
+            <button><a href="https://www.pnct.net/VesselSchedule" target="#">Vessel Schedule</a></button>
+            <button><a href="https://www.pnct.net/EmptyReturn" target="#">Empty Returns</a></button>
+            <button><a href="https://www.pnct.net/content/show/gatecameras" target="#">Gate Camers</a></button>
+        </div>
+        <div class="terminals" id="global">
+            <h2>Global Terminal</h2>
+            <button><a href="https://payments.gcterminals.com/GlobalTerminal/globalSearch.do" target="#">Booking</a></button>
+            <button><a href="https://globalterminalsbayonne.com/vessel-schedule/" target="#">Vessel Schedule</a></button>
+            <button><a href="https://globalterminalsbayonne.com/wp-content/uploads/2021/04/Copy-of-GCT_Bayonne_Empty_Acceptance_List.pdf" target="#">Empty Returns</a></button>
+            <button><a href="https://payments.gcterminals.com/GlobalTerminal/globalSearch.do" target="#">Container Availability</a></button>
+        </div>
+        <div class="terminals" id="apm">
+            <h2>APM Terminal</h2>
+            <button><a href="https://payments.gcterminals.com/GlobalTerminal/globalSearch.do" target="#">Booking</a></button>
+            <button><a href="https://www.apmterminals.com/en/port-elizabeth/e-tools/vessel-schedule" target="#">Vessel Schedule</a></button>
+            <button><a href="https://www.apmterminals.com/en/port-elizabeth/practical-information/empty-container-return-policy" target="#">Empty Returns</a></button>
+            <button><a href="https://inductionchecker.visitorhsse.com/portElizabeth" target="#">Check Sealink Staus</a></button>
+        </div>
+        <div class="terminals" id="nyct">
+            <h2>NYCT Terminal</h2>
+            <button><a href="https://mobile.maherterminals.com/booking-inquiry" target="#">Booking</a></button>
+            <button><a href="https://globalterminalsnewyork.com/vessel-schedule/" target="#">Vessel Schedule</a></button>
+            <button><a href="https://globalterminalsnewyork.com/empty-acceptance-list/" target="#">Empty Returns</a></button>
+            <button><a href="https://mobile.maherterminals.com/container-availability" target="#">Container Availability</a></button>
+        </div>
+    </section>
+    <footer>
+        <h3>Scotty's Server &copy2022</h3>
+    </footer>
     <script src="index.js"></script>
-    <footer>Scotty's CheatSheet &copy 2022</footer>
+   
 </body>
 </html>
