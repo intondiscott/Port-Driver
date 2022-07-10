@@ -1,6 +1,6 @@
 
 
-const darkMode = document.querySelector('.toggle');
+const darkMode = document.querySelector('.switch');
 darkMode.addEventListener('click', () => document.body.classList.toggle('dark-mode'))
 /*const fileDisplayArea = document.querySelector('#traffic')
 function readTextFile(file)
